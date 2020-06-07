@@ -1,0 +1,4 @@
+package com.nichar.goo.entrystream.generated;
+public class DistinctValuesBenchmark_BenchmarkState_jmhType extends DistinctValuesBenchmark_BenchmarkState_jmhType_B3 {
+}
+
