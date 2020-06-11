@@ -5,9 +5,16 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.nichar.goo</groupId>
-	<artifactId>goo-entrystream</artifactId>
+	<artifactId>goo</artifactId>
 	<packaging>pom</packaging>
 	<version>1.0-SNAPSHOT</version>
+
+	<name>Goo</name>
+
+	<modules>
+		<module>goo-entrystream</module>
+		<module>goo-benchmark</module>
+	</modules>
 
 	<build>
 		<plugins>
@@ -22,9 +29,15 @@
 			</plugin>
 		</plugins>
 	</build>
-	<modules>
-		<module>goo-entrystream-api</module>
-		<module>goo-entrystream-benchmark</module>
-	</modules>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.junit.jupiter</groupId>
+				<artifactId>junit-jupiter-engine</artifactId>
+				<version>5.6.2</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 </project>
